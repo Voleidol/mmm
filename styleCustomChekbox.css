@@ -1,0 +1,37 @@
+.divInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    color: green
+}
+
+input[type="checkbox"]:checked {
+    background-color: blue;
+    border-color: blue;
+    background-image: url("./images/galochka.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+input[type="checkbox"]:disabled {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    color: red;
+}
+
+
